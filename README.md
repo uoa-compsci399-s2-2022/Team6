@@ -36,7 +36,7 @@ In the back-end part, we use springboot architecture, so we use IntelliJ IDEA(20
 
 (install java8 ----https://www.codejava.net/java-se/download-and-install-java-8-on-windows)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/2.png)
+
 
 (open choose-course-api with IntelliJ IDEA(2022) )
 
