@@ -24,8 +24,6 @@ Our front-end uses the Vue architecture, so we first need to download Nodejs, co
 
 (The tutorial of install and run vue --https://softauthor.com/up-and-running-with-vuejs3-project/)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/1.png)
-
 In the previous part, we used a UI-library developed by a Chinese Internet company, which could cooperate well with vue to complete the development of the project.-(element-ui)
 
 (install element-ui---- https://element.eleme.io/\#/zh-CN)
