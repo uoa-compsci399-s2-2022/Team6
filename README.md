@@ -24,7 +24,7 @@ Our front-end uses the Vue architecture, so we first need to download Nodejs, co
 
 (The tutorial of install and run vue --https://softauthor.com/up-and-running-with-vuejs3-project/)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/1.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/1.png)
 
 In the previous part, we used a UI-library developed by a Chinese Internet company, which could cooperate well with vue to complete the development of the project.-(element-ui)
 
@@ -38,18 +38,18 @@ In the back-end part, we use springboot architecture, so we use IntelliJ IDEA(20
 
 (install java8 ----https://www.codejava.net/java-se/download-and-install-java-8-on-windows)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/2.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/2.png)
 
 (open choose-course-api with IntelliJ IDEA(2022) )
 
 (Configure maven into IntelliJ IDEA)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/3.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/3.png)
 
 
 (Configure jdk1.8 into IntelliJ IDEA)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/4.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/4.png)
 
 (install navicat -- <https://www.navicat.com/en/products/navicat-premium)>
 
@@ -59,27 +59,27 @@ The database part we use mysql language, put sql code into Navicat Premium 16 to
 
 Create a database which called ‘student_choose_course’, then run the sql file.
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/5.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/5.png)
 
 When you've configured all the environments, open the BusinessApiApplication.java.
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/6.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/6.png)
 
 Then the local password for the database is set in application-dev.yml(if your database password is not ‘123456’, set it to your real password in the .yml file)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/7.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/master/main/ReadmeImage/7.png)
 
 Then run the BusinessApiApplication.java by the SpringBoot.
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/8.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/8.png)
 
 After a few seconds, if it runs it successfully, then open CMD as the administrator, cd to the choose-course-ui folder.
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/9.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/9.png)
 
 If you do not install the ‘npm’, just input ‘npm install’, otherwise, just input ‘npm run serve’, after a few seconds, the website will be opened.
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/main/ReadmeImage/10.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/10.png)
 
 URL of the website where the project has been deployed: We do not deployed the project on the server.
 
