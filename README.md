@@ -67,7 +67,7 @@ When you've configured all the environments, open the BusinessApiApplication.jav
 
 Then the local password for the database is set in application-dev.yml(if your database password is not ‘123456’, set it to your real password in the .yml file)
 
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/master/master/ReadmeImage/7.png)
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/master/ReadmeImage/7.png)
 
 Then run the BusinessApiApplication.java by the SpringBoot.
 
