@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.project.modules.examination.dao.UserCourseDao">
+
+    <resultMap type="com.project.modules.examination.entity.UserCourseEntity" id="userCourseMap">
+        <result property="id" column="ID"/>
+        <result property="userId" column="USER_ID"/>
+        <result property="userName" column="USER_NAME"/>
+        <result property="userCode" column="USER_CODE"/>
+        <result property="stage1" column="STAGE1"/>
+        <result property="stage2" column="STAGE2"/>
+        <result property="stage3" column="STAGE3"/>
+    </resultMap>
+    <delete id="deleteByUserName">
+        delete from tb_user_course where USER_NAME=#{userName}
+    </delete>
+
+    <select id="getStageByUser" resultType="com.project.modules.examination.dto.UserCourseDTO">
+            SELECT STAGE1,STAGE2,STAGE3,GE FROM tb_user_course Where 1=1
+            <if test="userId != null and userId.trim() != ''">
+                and USER_ID = #{userId}
+            </if>
+            <if test="userName != null and userName.trim() != ''">
+                and USER_NAME = #{userName}
+            </if>
+    </select>
+    <select id="getAllMajorByType" resultType="com.project.modules.examination.dto.CourseDTO">
+        SELECT major FROM `tb_course` GROUP BY major HAVING MAJOR != 'GE'
+    </select>
+
+
+</mapper>

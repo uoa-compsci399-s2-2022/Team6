@@ -1,0 +1,67 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    threads:
+      max: 1000
+      min-spare: 30
+  port: 8889
+  servlet:
+    context-path: /management-api
+    session:
+      cookie:
+        http-only: true
+
+spring:
+  # dev|test|prod
+  profiles:
+    active: dev
+  messages:
+    encoding: UTF-8
+    basename: i18n/messages
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+  redis:
+    database: 0
+    host: 192.168.10.10
+    port: 6379
+    password:
+    timeout: 6000ms
+    jedis:
+      pool:
+        max-active: 1000
+        max-wait: -1ms
+        max-idle: 10
+        min-idle: 5
+
+# redis
+renren:
+  redis:
+    open: false
+
+#mybatis
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  typeAliasesPackage: com.project.modules.*.entity
+  global-config:
+    #database
+    db-config:
+      #PK type
+      id-type: ASSIGN_ID
+    banner: false
+  #Original configuration
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    call-setters-on-nulls: true
+    jdbc-type-for-null: 'null'
+  configuration-properties:
+    prefix:
+    blobType: BLOB
+    boolValue: TRUE

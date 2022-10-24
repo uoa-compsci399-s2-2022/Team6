@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.project.modules.examination.dao.CourseDao">
+
+    <resultMap type="com.project.modules.examination.entity.CourseEntity" id="courseMap">
+        <result property="id" column="ID"/>
+        <result property="stage" column="STAGE"/>
+        <result property="major" column="MAJOR"/>
+        <result property="course" column="COURSE"/>
+        <result property="remark" column="REMARK"/>
+    </resultMap>
+
+    <select id="getCourseByMajor" resultType="com.project.modules.examination.dto.CourseDTO">
+        SELECT * FROM tb_course Where 1=1
+        <if test="stage != null and stage.trim() != ''">
+            and stage = #{stage}
+        </if>
+        <if test="major != null and major.trim() != ''">
+            and major = #{major}
+        </if>
+        <if test="course != null and course.trim() != ''">
+            and course = #{course}
+        </if>
+    </select>
+</mapper>
