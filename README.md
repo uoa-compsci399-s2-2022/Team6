@@ -88,7 +88,8 @@ Required Environment:
 Steps for building:
 
 
-1. Import the back-end project to IDEA
+1. Open the IDEA then open the whole folder of the project.
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/12.png)
 
 2. Set the java environment, File -> Project Structrue -> Project, set the path of jdk1.8, and set java8 in IDEA.
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/4.png)
