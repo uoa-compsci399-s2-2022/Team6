@@ -98,7 +98,7 @@ Steps for building:
 4. Go to File -> setting, search for maven, set maven home path to the root directory where maven is installed, and confirm the modification.
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/3.png)
 
-5. Finally found the system-api\business-api\src\main\java\com\\project\BussinessApiApplication under the project directory of the Java.
+5. Finally, found the system-api\business-api\src\main\java\com\\project\BussinessApiApplication under the project directory of the Java.
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/6.png)
 
@@ -106,7 +106,7 @@ Then the local password for the database is set in application-dev.yml.(if your 
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/7.png)
 
-Then run the BusinessApiApplication.java by the SpringBoot.
+Run the BusinessApiApplication.java by the SpringBoot.
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/8.png)
 
