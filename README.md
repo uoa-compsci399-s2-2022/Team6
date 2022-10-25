@@ -18,24 +18,71 @@ Instructions on how to install and setup the project:
 <br>
 <br>
 
-Our front-end uses the Vue architecture, so we first need to download Nodejs, configure the environment on the computer, then install dependencies (npm), and then open the front-end folder (choose-course-ui) cmd, input npm run serve, you can run the front-end part.
+<h2>Environment Construction:</h2>
+
+
+</h3>Front end:</h3>
+
+
+1. Download the node 12. X (tutorial: https://blog.csdn.net/Small_Yogurt/article/details/104968169)
 
 (nodejs--https://nodejs.org/en/)
 
 (The tutorial of install and run vue --https://softauthor.com/up-and-running-with-vuejs3-project/)
 
+2. Go to the root directory of the front-end project and run the 'npm install' command to install the dependencies. After the installation is successful, a 'node_modules' folder will be added to the root directory of the project
+
+3. run 'npm run serve' in the root directory to run the project
+
+4. Enter 'localhost:8001/#/login' in the browser to access the login page. The front-end is successfully set up
+
 In the previous part, we used a UI-library developed by a Chinese Internet company, which could cooperate well with vue to complete the development of the project.-(element-ui)
 
 (install element-ui---- https://element.eleme.io/\#/zh-CN)
 
-In the back-end part, we use springboot architecture, so we use IntelliJ IDEA(2022) to run the back-end code. The back-end code is in the choose-course-api folder. First, we use IntelliJ IDEA(2022) to open the back-end folder, and then we need to download java8, maven(3.8.6), Configure jdk1.8 and maven into IntelliJ IDEA, and then you can run the backend code properly.
+<h3>Database:</h3>
 
-(install Intellij IDEA --- <https://www.jetbrains.com/idea/)>
+1. Install mysql (https://www.runoob.com/mysql/mysql-install.html)
 
-(install maven ----https://phoenixnap.com/kb/install-maven-windows)
+2. Install navicat -- (https://www.navicat.com/en/products/navicat-premium)
 
-(install java8 ----https://www.codejava.net/java-se/download-and-install-java-8-on-windows)
+The database part we use mysql language, put sql code into Navicat Premium 16 to run.
 
+Create a database which called ‘student_choose_course’, then run the sql file.
+
+![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/5.png)
+
+<h3>Backend:</h3>
+
+Required Environment:
+
+1. java8 ([https://zhuanlan.zhihu.com/p/116020283](https://www.codejava.net/java-se/download-and-install-java-8-on-windows))
+
+2. maven 3.x (https://maven.apache.org/download.cgi)
+  tutorial: (https://phoenixnap.com/kb/install-maven-windows)
+  (1). After 'Step 3:Add MAVEN_HOME Directory in PATH Variable', you should create a new folder called 'Maven-Repository' under C:\Program Files\Maven and use it as a local repository for maven.
+
+  (2). Find the settings.xml file under C:\Program Files\Maven\apache-maven-3.8.1\conf
+
+  (3). Fine the node 'localRepository' and add it outside the comment
+
+      
+
+3. Intellij IDEA (https://www.jetbrains.com/idea)
+  tutorial: (https://blog.csdn.net/weixin_51521490/article/details/122029830)
+
+Steps for building:
+
+
+1. Import the back-end project to idea
+
+2. Set the java environment, File -> Project Structrue -> Project, set the path of jdk1.8, and set java8
+
+3. Locate the project's pom.xml and right-click set maven project
+
+4. Go to File -> setting, search for maven, set maven home path to the root directory where maven is installed, and confirm the modification
+
+5. Finally found the system API \ business - API \ SRC \ main \ Java \ com \ BussinessApiApplication under the project directory of the Java, Locate the main method, right click on the triangle in front of the method, and click run/debug BusinessApiApplication. The project runs successfully
 
 
 (open choose-course-api with IntelliJ IDEA(2022) )
@@ -49,15 +96,7 @@ In the back-end part, we use springboot architecture, so we use IntelliJ IDEA(20
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/4.png)
 
-(install navicat -- <https://www.navicat.com/en/products/navicat-premium)>
 
-(install mysql -- <https://www.mysql.com/)>
-
-The database part we use mysql language, put sql code into Navicat Premium 16 to run.
-
-Create a database which called ‘student_choose_course’, then run the sql file.
-
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/5.png)
 
 When you've configured all the environments, open the BusinessApiApplication.java.
 
