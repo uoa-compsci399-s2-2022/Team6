@@ -24,8 +24,19 @@ Technologies that are used to build the project (include the languages used, the
 
 
 1. Download the node 12. X (nodejs--https://nodejs.org/en/)
-  tutorial: https://blog.csdn.net/Small_Yogurt/article/details/104968169
-  The tutorial of install and run vue --https://softauthor.com/up-and-running-with-vuejs3-project/
+
+&emsp;tutorial: (https://softauthor.com/up-and-running-with-vuejs3-project/)
+
+&emsp;After the installation is complete, you shold configure environment variables:
+
+&emsp;&emsp;Right-click 'the computer' -- > Advanced System Settings -- > Environment Variables.
+
+&emsp;&emsp;In the System Variables, create a variable called 'NODE_PATH', the value is the 'node_modules folder' under the 'node_global' folder. 
+
+&emsp;&emsp;Such as: 'E:\develop\nodejs\ node_global\ ode_modules'.
+
+&emsp;&emsp;Then change the Path variable in the User Variable to change the default npm path to the new node_global path.
+
 
 2. Go to the root directory of the front-end project and run the 'npm install' command to install the dependencies. After the installation is successful, a 'node_modules' folder will be added to the root directory of the project
 
@@ -88,7 +99,7 @@ Steps for building:
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/6.png)
 
-Then the local password for the database is set in application-dev.yml(if your database password is not ‘123456’, set it to your real password in the .yml file)
+Then the local password for the database is set in application-dev.yml(if your local database password is not ‘123456’, set it to your real password in the .yml file)
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/7.png)
 
@@ -96,13 +107,6 @@ Then run the BusinessApiApplication.java by the SpringBoot.
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/8.png)
 
-After a few seconds, if it runs it successfully, then open CMD as the administrator, cd to the choose-course-ui folder.
-
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/9.png)
-
-If you do not install the ‘npm’, just input ‘npm install’, otherwise, just input ‘npm run serve’, after a few seconds, the website will be opened.
-
-![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/10.png)
 
 <br>
 <br>
