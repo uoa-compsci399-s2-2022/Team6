@@ -66,7 +66,7 @@ Required Environment:
 
   (3). Find the node 'localRepository' and add it outside the comment
 
-      ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/11.png)
+   ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/11.png)
 
 3. Intellij IDEA (https://www.jetbrains.com/idea)
   tutorial: (https://blog.csdn.net/weixin_51521490/article/details/122029830)
