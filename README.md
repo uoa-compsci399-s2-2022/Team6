@@ -67,10 +67,14 @@ Create a database which called ‘student_choose_course’, then run the sql fil
 
 Required Environment:
 
-1. java8 ([https://zhuanlan.zhihu.com/p/116020283](https://www.codejava.net/java-se/download-and-install-java-8-on-windows))
+1. java8 
+
+&emsp;tutorial: (https://www.codejava.net/java-se/download-and-install-java-8-on-windows))
 
 2. maven 3.x (https://maven.apache.org/download.cgi)
-  tutorial: (https://phoenixnap.com/kb/install-maven-windows)
+
+&emsp;tutorial: (https://phoenixnap.com/kb/install-maven-windows)
+  
   (1). After 'Step 3:Add MAVEN_HOME Directory in PATH Variable', you should create a new folder called 'Maven-Repository' under C:\Program Files\Maven and use it as a local repository for maven.
 
   (2). Find the settings.xml file under C:\Program Files\Maven\apache-maven-3.8.1\conf
@@ -79,27 +83,26 @@ Required Environment:
 
    ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/11.png)
 
-3. Intellij IDEA (https://www.jetbrains.com/idea)
-  tutorial: (https://blog.csdn.net/weixin_51521490/article/details/122029830)
+3. Intellij IDEA (https://www.jetbrains.com/idea) (You should download the Ultimate Version of IDEA)
 
 Steps for building:
 
 
 1. Import the back-end project to IDEA
 
-2. Set the java environment, File -> Project Structrue -> Project, set the path of jdk1.8, and set java8 in IDEA
+2. Set the java environment, File -> Project Structrue -> Project, set the path of jdk1.8, and set java8 in IDEA.
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/4.png)
 
-3. Locate the project's pom.xml and right-click set maven project
+3. Find the project's file 'pom.xml' in IDEA and right-click to set maven project.
 
-4. Go to File -> setting, search for maven, set maven home path to the root directory where maven is installed, and confirm the modification
+4. Go to File -> setting, search for maven, set maven home path to the root directory where maven is installed, and confirm the modification.
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/3.png)
 
-5. Finally found the system-api\business-api\src\main\java\com\\project\BussinessApiApplication under the project directory of the Java
+5. Finally found the system-api\business-api\src\main\java\com\\project\BussinessApiApplication under the project directory of the Java.
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/6.png)
 
-Then the local password for the database is set in application-dev.yml(if your local database password is not ‘123456’, set it to your real password in the .yml file)
+Then the local password for the database is set in application-dev.yml.(if your local database password is not ‘123456’, set it to your real password in the .yml file)
 
 ![image](https://github.com/uoa-compsci399-s2-2022/Team6-Degree-Planner/blob/master/ReadmeImage/7.png)
 
